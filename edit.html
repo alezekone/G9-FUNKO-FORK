@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit | Funkoshop</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <picture>
+                <a href="./index.html">
+                    <img src="../funko-proyect/multimedia/branding/logo_light_horizontal.svg"
+                        alt="Isologotipo de la marca Funkoshop">
+                </a>
+            </picture>
+            <ul>
+                <li><a href="./shop.html">VER TIENDA</a></li>
+                <li><a href="./admin.html">ADMIN</a></li>
+                <li><a href="">SALIR</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>EDITAR ITEM</h2>
+        <section>
+            <form action="#">
+                <label for="categoria">Categoría: </label>
+                <select name="categoria" id="categoria">
+                    <option selected value="figuras">Figuras</option>
+                </select>
+
+                <label for="licencia">Licencia: </label>
+                <select name="licencia" id="licencia">
+                    <option selected value="naruto">Naruto Shippuden</option>
+                </select>
+            </form>
+        </section>
+        <section>
+            <label for="nombre_producto">Nombre del producto: </label>
+            <input type="text" name="nombre_producto" value="Kakashi Hatake Shippuden Saga">
+        </section>
+        <section>
+            <textarea name="descripcion" id="descripcion" cols="80" rows="8">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.</textarea>
+        </section>
+        <section>
+            <label for="SKU">SKU: </label>
+            <input type="text" name="SKU" value="NAR001012">
+
+            <label for="precio">Precio: </label>
+            <input type="text" name="precio" value="$1.799,00">
+
+            <label for="stock">Stock: </label>
+            <input type="text" name="stock" value="10">
+        </section>
+        <section>
+            <label for="descuento">Descuento: </label>
+            <input type="text" name="descuento" value="10%">
+
+            <label for="cuotas">Cuotas: </label>
+                <select name="cuotas" id="cuotas">
+                    <option selected value="6">6 cuotas sin interés</option>
+                </select>
+
+        </section>
+        <section>
+            <label for="imagenes">Imágenes: </label>
+            <input type="file" name="imagenes">
+        </section>
+        <section>
+            <article>
+                <picture>
+                    <img src="./multimedia/Group 109.svg" alt="Imagen frente caja figura Kakashi">
+                </picture>
+                <picture>
+                    <img src="./multimedia/Group 110.svg" alt="Imagen dorso caja figura Kakashi">
+                </picture>
+            </article>
+            
+        </section>
+        <input type="button" value="Modificar Producto">
+
+    </main>
+    <footer>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="./shop.html">SHOP</a></li>
+                    <li><a href="./register.html">REGISTRARSE</a></li>
+                    <li><a href="./login.html">INGRESAR</a></li>
+                    <li><a href="./contact.html">CONTACTO</a></li>
+                </ul>
+                <picture>
+                    <img src="./multimedia/branding/isotype.svg" alt="Isologotipo de la marca Funkoshop">
+                </picture>
+            </nav>
+        </section>
+        <p>All rights reserved 2022 - Funkoshop &copy;</p>
+
+    </footer>
+</body>
+
+</html>
