@@ -1,0 +1,120 @@
+
+
+/*Reset CSS*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+/*CSS REGISTER*/
+
+.register-container {
+    width: 100%;
+    height: auto;
+}
+
+.register-container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+.register-title {
+    color: #1F1F1F;
+    text-align: right;
+    font-family: Raleway;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.68px;
+}
+
+.register-subtitle {
+    color: #1F1F1F;
+    text-align: right;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1.28px;
+}
+
+
+.register-submit {
+    width: 102.995px;
+    height: 39.062px;
+    flex-shrink: 0;
+    background: #F33;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+
+.register-form-item {
+    display: flex; 
+    color: #000;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    align-items: center;
+    place-content: space-between;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+}
+    
+.register-form-item:nth-child(5) label{
+    padding-right: 10px;
+}
+
+.register-form-item input {
+    border-bottom: 2px solid #F33;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.64px;
+}
+
+input::placeholder{
+    color: #B9B9B9;
+}
+.register-form-controller{
+    display: flex;
+    justify-content: space-around;
+}
+
+.register-form-aceptar {
+    color: #1F1F1F;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px;
+}
+
+.register-terminos-condiciones{
+    color: #1D84B5;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
