@@ -118,3 +118,51 @@ input::placeholder{
     font-weight: 400;
     line-height: normal;
 }
+/* CSS EDIT*/
+.nav-edit{
+    display: flex;
+    justify-content: space-between;
+}
+.items-nav-edit{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--second-font);
+    font-size: var(--font-xsmall);
+    color: var(--light-solid-font);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.cuerpo-edit{
+    margin:  var(--spacing-36)var(--spacing-68);
+    
+
+}
+.titulo-edit{
+    margin: var(--spacing-12) 0;
+    color: var(--dark-solido);
+    font-family: var(--second-font);
+    font-size: var(--font-xlarge);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.primer-linea-edit{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.categoria-edit, .licencia-edit{
+    color: #000;
+    text-align: right;
+    font-family: var(--base-font);
+    font-size: var(--font-small);
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+#categoria, #licencia{
+    border: #1F1F1F 1px solid;
+}

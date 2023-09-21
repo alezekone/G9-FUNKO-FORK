@@ -5,89 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit | Funkoshop</title>
-    
+    <link rel="stylesheet" href="../Normalizacioncss.css">
     <link rel="stylesheet" href="../styles.css">
-    
+
 </head>
 
 <body>
     <header>
-        <nav>
-            <div>
+        <nav class="nav-edit">
+
             <picture>
                 <a href="../index.html">
-                    <img src="../img/branding/logo_light_horizontal.svg"
-                        alt="Isologotipo de la marca Funkoshop">
+                    <img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
                 </a>
-            </picture></div>
-            <div>
-            <ul>
+            </picture>
+
+            <ul class="items-nav-edit">
                 <li><a href="./shop.html">VER TIENDA</a></li>
                 <li><a href="./admin.html">ADMIN</a></li>
                 <li><a href="#">SALIR</a></li>
-            </ul></div>
+            </ul>
+
         </nav>
     </header>
-    <main>
-        <h2>EDITAR ITEM</h2>
-        <section>
-            <div>
-                <form action="#">
-                    <label for="categoria">Categoría: </label>
-                    <select name="categoria" id="categoria">
-                        <option selected value="figuras">Figuras</option>
+    <main class="cuerpo-edit">
+        <h2 class="titulo-edit">EDITAR ITEM</h2>
+        <section class="formulario-edit">
+
+            <form action="#">
+                <div class="primer-linea-edit">
+                    <div class="categoria-edit">
+                        <label for="categoria">Categoría: </label>
+                        <select name="categoria" id="categoria">
+                            <option selected value="figuras">Figuras</option>
+                        </select>
+                    </div>
+                    <div class="licencia-edit">
+                        <label for="licencia">Licencia: </label>
+                        <select name="licencia" id="licencia">
+                            <option selected width="5%"value="naruto">Naruto Shippuden</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div>
+                    <label for="nombre_producto">Nombre del producto: </label>
+                    <input type="text" name="nombre_producto" value="Kakashi Hatake Shippuden Saga">
+                </div>
+                <div>
+                    <textarea name="descripcion" id="descripcion" cols="80"
+                        rows="8">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.</textarea>
+                </div>
+                <div>
+                    <label for="SKU">SKU: </label>
+                    <input type="text" name="SKU" value="NAR001012">
+
+                    <label for="precio">Precio: </label>
+                    <input type="text" name="precio" value="$1.799,00">
+
+                    <label for="stock">Stock: </label>
+                    <input type="text" name="stock" value="10">
+                </div>
+                <div>
+                    <label for="descuento">Descuento: </label>
+                    <input type="text" name="descuento" value="10%">
+
+                    <label for="cuotas">Cuotas: </label>
+                    <select name="cuotas" id="cuotas">
+                        <option selected value="6">6 cuotas sin interés</option>
                     </select>
 
-                    <label for="licencia">Licencia: </label>
-                    <select name="licencia" id="licencia">
-                        <option selected value="naruto">Naruto Shippuden</option>
-                    </select>
-                </form>
-            </div>
-            <div>
-                <label for="nombre_producto">Nombre del producto: </label>
-                <input type="text" name="nombre_producto" value="Kakashi Hatake Shippuden Saga">
-            </div>
-            <div>
-                <textarea name="descripcion" id="descripcion" cols="80"
-                    rows="8">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.</textarea>
-            </div>
-            <div>
-                <label for="SKU">SKU: </label>
-                <input type="text" name="SKU" value="NAR001012">
+                </div>
+                <div>
+                    <label for="imagenes">Imágenes: </label>
+                    <input type="file" name="imagenes">
+                </div>
+                <div>
+                    <article>
+                        <picture>
+                            <img src="../img/Group 109.svg" alt="Imagen frente caja figura Kakashi">
+                        </picture>
+                        <picture>
+                            <img src="../img/Group 110.svg" alt="Imagen dorso caja figura Kakashi">
+                        </picture>
+                    </article>
 
-                <label for="precio">Precio: </label>
-                <input type="text" name="precio" value="$1.799,00">
-
-                <label for="stock">Stock: </label>
-                <input type="text" name="stock" value="10">
-            </div>
-            <div>
-                <label for="descuento">Descuento: </label>
-                <input type="text" name="descuento" value="10%">
-
-                <label for="cuotas">Cuotas: </label>
-                <select name="cuotas" id="cuotas">
-                    <option selected value="6">6 cuotas sin interés</option>
-                </select>
-
-            </div>
-            <div>
-                <label for="imagenes">Imágenes: </label>
-                <input type="file" name="imagenes">
-            </div>
-            <div>
-                <article>
-                    <picture>
-                        <img src="../img/Group 109.svg" alt="Imagen frente caja figura Kakashi">
-                    </picture>
-                    <picture>
-                        <img src="../img/Group 110.svg" alt="Imagen dorso caja figura Kakashi">
-                    </picture>
-                </article>
-
-            </div>
-            <input type="button" value="Modificar Producto">
+                </div>
+                <input type="button" value="Modificar Producto">
+            </form>
         </section>
 
     </main>
