@@ -4,30 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Funkoshop</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./Normalizacioncss.css">
 </head>
 <body>
     <!--  ************* HEADER ****************  -->
     <header>
-        <nav>
-            <picture>
-                <!--poner enlace a pagina principal-->
+        <nav class="navbar container">
+            <picture class="navbar-logo">
                 <a href="index.html">
                     <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
                 </a>
             </picture>
-            <ul> 
-                <li>
-                    <a href="./pages/shop.html">SHOP</a>
+            <ul class="navbar-menu"> 
+                <li class="navbar-item with-submenu">
+                    <a class="submenu-link with-icon" href="./pages/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                    <!-- Submenú de SHOP - Inicio -->
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="" class="submenu-link">Funkos</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="" class="submenu-link">Remeras</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="" class="submenu-link">Llaveros</a>
+                        </li>
+                    </ul>
+                    <!-- Submenú de SHOP - Fin -->
                 </li>
-                <li>
-                    <a href="./pages/contact.html">CONTACTO</a>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="./pages/contact.html">CONTACTO</a>
                 </li>
-                <li>
-                    <a href="./pages/login.html">LOGIN</a>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="./pages/login.html">LOGIN</a>
                 </li>
-                <li>
-                    <a href="./pages/carrito.html">
+                <li class="navbar-item">
+                    <a class="navbar-carrito" href="./pages/carrito.html">
                         <img src="./img/icons/cart-icon.svg" alt="icono de carrito">
 	                </a>
                 </li>
@@ -36,17 +48,20 @@
         </nav>
     </header>
 
+    <!--  ************* HERO ****************  -->
+
+    <section class="hero">
+        <article class="hero-content container">
+            <!-- La imagen de fondo la pondremos como background con CSS -->
+            <h3 class="hero-title">Nuevos Ingresos</h3>
+            <p class="hero-text">Descubrí el próximo Funko Pop de tu colección</p>
+            <a class="hero-link" href="./pages/shop.html">SHOP</a>
+        </article>
+    </section>
+    
     <!--  ************* MAIN ****************  -->
     
     <main>
-        <section>
-            <article>
-                <!-- La imagen de fondo la pondremos como background con CSS -->
-                <h3>Nuevos Ingresos</h3>
-                <p>Descubrí el próximo Funko Pop de tu colección</p>
-                <a href="./pages/shop.html">SHOP</a>
-            </article>
-        </section>
         <section>
             <article>
                 <h3>Star Wars & The Mandalorian</h3>
@@ -160,6 +175,6 @@
         </section>
         <p>All rights reserved 2023 - Funkoshop &copy;</p>
     </footer>
-    
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 </html>
