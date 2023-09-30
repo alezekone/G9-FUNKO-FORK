@@ -163,6 +163,7 @@ header {
   width: 300px;
   position: absolute;
   background-color: var(--dark-bg-solid);
+  z-index: 3;
 }
 
 .submenu-link{
@@ -242,6 +243,80 @@ header {
 
 /*****************  FIN HERO  *****************/
 
+/*****************  INICIO MAIN DE INDEX.HTML  *****************/
+.index-main-container {
+  max-width: 1200px ;
+  margin: 0 auto;
+}
+.index-collection {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+}
+
+/*Cambiamos el orden para el segundo hijo de collection*/
+.index-collection:nth-child(2) .index-collection-cover {
+  order: -1;
+}
+
+.index-collection-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-24);
+  align-items: start;
+  /*"start" para que no sea "stretch" (valor por defecto) y que 
+    de este modo, el link no ocupe todo el ancho.*/
+}
+.index-collection-title {
+  font-family: var(--alternative-font);
+  font-size: var(--font-display);
+  font-weight: 500;
+}
+.index-collection-text {
+  font-family: var(--alternative-font);
+  font-size: var(--font-large);
+  font-weight: 300;
+  border-bottom: 2px solid var(--primario-solido);
+  padding-bottom: var(--spacing-20);
+} 
+
+.index-collection-link {
+  display: inline-block;
+  font-size: var(--font-medium);
+  background-color: var(--dark-bg-solid);
+  color: var(--light-solid-font);
+  padding: var(--spacing-16) var(--spacing-36);
+  border-radius: 50px;
+  font-weight: 500;
+  /*Si tenemos un :hover, debemos poner un transition...*/
+  transition: background .3s ease-in-out;
+}
+
+.index-collection-link:hover {
+  background-color: var(--primario-900);
+}
+
+.index-collection-cover {
+
+}
+
+/*****************  FIN MAIN DE INDEX.HTML  *****************/
+
+
+
+/***************  INICIO DE ULTIMOS LANZAMIENTOS  ****************/
+.container {
+  max-width: 1200px ;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-36);
+}
+
+/*****************  FIN DE ULTIMOS LANZAMIENTOS  *****************/
 /*-----------------INICIO MAIN-----------------*/
 /*----PERSONAJE----*/
 .item-collection{
