@@ -404,7 +404,7 @@ header {
   gap: var(--spacing-24);
 }
 
-.card-item-cover{
+.card-item__cover{
   display:flex;
   position: relative;
 }
@@ -419,19 +419,19 @@ header {
   right: 0;
 }
 
-.card-item-cover img{
+.card-item__cover img{
   animation: fade .7s;
 }
 
-.card-item-img--back{
+.card-item__img--back{
   display: none;
 }
 
-.card-item-cover:hover .card-item-img--back{
+.card-item__cover:hover .card-item__img--back{
   display: block;
 }
 
-.card-item-cover:hover .card-item-img--front{
+.card-item__cover:hover .card-item__img--front{
   display: none;
 }
 
