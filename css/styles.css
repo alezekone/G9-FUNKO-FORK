@@ -148,21 +148,125 @@ input::placeholder{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    letter-spacing: 1.68px;
 }
 .primer-linea-edit{
     width: 50%;
     display: flex;
     justify-content: space-between;
+    margin: var(--spacing-36) 0
 }
 .categoria-edit, .licencia-edit{
-    color: #000;
-    text-align: right;
+    color: var(--dark-solido);
     font-family: var(--base-font);
     font-size: var(--font-small);
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+    letter-spacing: 0.96px;
 }
-#categoria, #licencia{
-    border: #1F1F1F 1px solid;
+#categoria, #licencia, #cuotas{
+    border: var(--dark-solido) 1px solid;
+    border-radius: 7%;
+    width: 15rem;
+    margin-left: var(--spacing-8);
+    color: var(--dark-solido);
+    font-family: var(--base-font);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.nombre_producto_edit{
+    color: var(--dark-solido);
+    font-family: var(--base-font);
+    font-size: var(--font-small);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    margin-bottom: var(--spacing-20);
+}
+#nombre_prod{
+    color: var(--dark-solido);
+    font-family: var(--base-font);
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: var(--primario-900) 2px solid underline;
+    }
+#descripcion{
+    width: 63rem;
+    height: 12.17rem;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid var(--dark-solido);
+    color: var(--dark-solido);
+    font-family: var(--base-font);
+    font-size: var(--font-xsmall);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-align: left;
+    margin-bottom: var(--spacing-12);
+}
+.sku_precio_stock_edit{
+    margin-bottom: var(--spacing-36);    
+    display: flex;
+    gap: 0.8rem;
+    
+}
+.sku-edit{
+    color: var(--dark-solido);
+    font-family: var(--base-font);
+    font-size: var(--font-small);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+}
+.sku_value_edit{
+    width: 15rem;
+    color: var(--dark-solido);
+    font-family: var(--base-font);
+    font-size: var(--font-xsmall);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    text-decoration: var(--primario-900) 2px solid underline;
+}
+#cuotas{
+    width: 21.6rem;
+}
+.descuento_edit{
+    margin-bottom: var(--spacing-36);
+}
+.elegir_edit{
+    font-size: 1.1em;
+}
+.elegir_img_edit{
+    margin-bottom: var(--spacing-16);
+}
+.img_frente_edit{
+    margin-right: var(--spacing-16);
+}
+.img_edit{
+    width: 9.37rem;
+}
+.footer_nav_edit{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_li_edit{
+    color: var(--light-solid-font);
+    font-family: var(--second-font);
+    font-size: var(--font-xsmall);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 1.25rem 0;
+}
+.footer_p_edit{
+    font-size: var(--font-xsmall);
 }
