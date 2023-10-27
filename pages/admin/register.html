@@ -4,43 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Raleway:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Register | Funkoshop</title>
+    <link rel="stylesheet" href="../../css/Normalizacioncss.css">
+    <link rel="stylesheet" href="../../css/styles.css">
 </head>
 
 <body>
-    <!--HEADER-->
-
     <header>
-        <nav class="navbar conteiner">
-            <picture class="navbar-logo">
-                <!--poner enlace a pagina principal-->
-                <a href="../index.html">
-                    <img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
+        <nav class="nav-edit container">
+
+            <picture>
+                <a href="../../index.html">
+                    <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
                 </a>
             </picture>
-            <ul class="navbar_menu">
-                <li class="navbar-item">
-                    <a href="./shop.html">SHOP</a>
-                </li>
-                <li class="navbar-item">
-                    <a href="./contact.html">CONTACTO</a>
-                </li>
-                <li class="navbar-item">
-                    <a href="./login.html">LOGIN</a>
-                </li>
-                <li class="navbar-item">
-                    <a href="carrito.html">
-                        <img class="navbar-carrito" src="../img/icons/cart-icon.svg" alt="icono de carrito">
-                    </a>
-                </li>
+
+            <ul class="items-nav-edit">
+                <li><a class="link_edit" href="../shop/shop.html">VER TIENDA</a></li>
+                <li><a class="link_edit" href="../admin/admin.html">ADMIN</a></li>
+                <li><a class="link_edit" href="../../index.html">SALIR</a></li>
             </ul>
+
         </nav>
     </header>
-     <!--  ************* MAIN REGISTER ****************  -->
+
     <main class="register-container">
         <div class="register-container-form">
             <h1 class="register-title">CREA TU CUENTA</h1>
@@ -63,45 +50,43 @@
                     <input type="password" placeholder="Contraseña" />
                 </div>
                 <div class="register-form-item">
-                    <label for="repcontraseña">Repetita Contraseña:</label>
+                    <label for="repcontraseña">Repita Contraseña:</label>
                     <input type="password" placeholder="Constraseña" />
                 </div>
                 <div class="register-form-controller">
                     <input type="submit" value="Registrar" class="register-submit">
-                    
+
                     <span class="register-form-aceptar">
                         <input type="checkbox" name="casilla">
-                        Acepto 
+                        Acepto
                         <a href="" class="register-terminos-condiciones">Términos y Condiciones</a>
                     </span>
                 </div>
             </form>
         </div>
     </main>
-     <!--  ************* FOOTER ****************  -->
-     <footer>
+    <footer class="footer footer_edit container">
         <section>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="./shop.html">SHOP</a>
-                    </li>
-                    <li>
-                        <a href="./register.html">REGISTRARSE</a>
-                    </li>
-                    <li>
-                        <a href="./login.html">LOGIN</a>
-                    </li>
-                    <li>
-                        <a href="./contact.html">CONTACTO</a>
-                    </li>
-                </ul>
-                <picture>
-                    <img class="navbar-logo" src="../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop" width="143px" height="116px">
-                </picture>
+            <nav class="footer_nav_edit container">
+                <div>
+                    <ul>
+                        <li class="footer_li_edit"><a class="link_edit" href="../shop/shop.html">SHOP</a></li>
+                        <li class="footer_li_edit"><a class="link_edit" href="../admin/register.html">REGISTRARSE</a>
+                        </li>
+                        <li class="footer_li_edit"><a class="link_edit" href="../admin/login.html">INGRESAR</a></li>
+                        <li class="footer_li_edit"><a class="link_edit" href="#">CONTACTO</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <picture>
+                        <img width="143px" height="116px" src="../../img/branding/isotype.svg"
+                            alt="Isologotipo de la marca Funkoshop">
+                    </picture>
+                </div>
             </nav>
         </section>
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
+        <p class="footer-copy footer_p_edit">All rights reserved 2022 - Funkoshop &copy;</p>
+
     </footer>
 </body>
 
