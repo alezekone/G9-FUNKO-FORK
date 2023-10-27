@@ -14,11 +14,8 @@
     font-weight: 500;
     line-height: normal;
 }
-/*CSS REGISTER*/
-
 .register-container {
     width: 100%;
-    height: auto;
 }
 
 .register-container-form {
@@ -30,28 +27,26 @@
 }
 
 .register-title {
-    color: #1F1F1F;
-    text-align: right;
-    font-family: Raleway;
-    font-size: 42px;
+    color: var(--dark-solido);
+    font-family: var(--second-font);
+    font-size: var(--font-jumbo);
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 1.68px;
+    margin-top: var(--spacing-36) ;
 }
 
 .register-subtitle {
-    color: #1F1F1F;
-    text-align: right;
-    font-family: Raleway;
-    font-size: 32px;
+    color: var(--dark-solido);
+    font-family: var(--second-font);
+    font-size: var(--font-xlarge);
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     letter-spacing: 1.28px;
+    margin-top: 0;
 }
-
-
 .register-submit {
     width: 102.995px;
     height: 39.062px;
@@ -69,9 +64,9 @@
 
 .register-form-item {
     display: flex; 
-    color: #000;
-    font-family: Inter;
-    font-size: 24px;
+    color: var(--dark-solido);
+    font-family: var(--base-font);
+    font-size: var(--font-large);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -85,39 +80,36 @@
 .register-form-item:nth-child(5) label{
     padding-right: 10px;
 }
-
-.register-form-item input {
-    border-bottom: 2px solid #F33;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.64px;
-}
-
-input::placeholder{
+.input-register{
+    border-bottom: var(--primario-900) 2px solid;
+    width: 200px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    font-family: var(--base-font);
+    font-size: 1.8rem;
     color: #B9B9B9;
 }
 .register-form-controller{
-    display: flex;
-    justify-content: space-around;
+    margin-bottom: var(--spacing-36);
 }
-
 .register-form-aceptar {
-    color: #1F1F1F;
-    font-family: Inter;
-    font-size: 18px;
+    color: var(--dark-solido);
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin: 10px;
+    padding: var(--spacing-36);
 }
-
+.register-submit{
+    margin-left: var(--spacing-36);
+}
 .register-terminos-condiciones{
-    color: #1D84B5;
-    font-family: Inter;
-    font-size: 18px;
+    color: var(--secundario-900);
+    font-family: var(--base-font);
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
