@@ -254,9 +254,29 @@ input::placeholder{
 .img_edit{
     width: 9.37rem;
 }
+.input_mod_edit{
+    margin-top: 5rem;
+    background-color: var(--primario-900);
+    width: 17rem;
+    padding: var(--spacing-12) var(--spacing-20);
+    color: var(--light-solid-font);
+    font-family: var(--base-font);
+    font-size: var(--font-xsmall);
+    font-weight: 600;
+    transition: all 0.5 ease-in-out;
+}
+.input_mod_edit:hover{
+    background-color: var(--dark-bg-solid);
+    color: var(--primario-900);
+
+}
+.footer_edit{
+    height: 343px;
+}
 .footer_nav_edit{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .footer_li_edit{
     color: var(--light-solid-font);
@@ -266,7 +286,15 @@ input::placeholder{
     font-weight: 500;
     line-height: normal;
     margin: 1.25rem 0;
+    
 }
 .footer_p_edit{
     font-size: var(--font-xsmall);
+}
+.link_edit{
+    padding: var(--spacing-8) var(--spacing-16);
+    transition: background 0.5 ease-in-out;
+}
+.link_edit:hover{
+    background-color: var(--primario-900);
 }
