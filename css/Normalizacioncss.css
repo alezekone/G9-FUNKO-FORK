@@ -252,6 +252,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2,1fr);
   align-items: center;
+  padding: var(--spacing-16) 0;
 }
 
 /*Cambiamos el orden para el segundo hijo de collection*/
@@ -314,6 +315,7 @@ header {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-36);
+  margin: var(--spacing-68) auto;
 }
 
 /*****************  FIN DE ULTIMOS LANZAMIENTOS  *****************/
