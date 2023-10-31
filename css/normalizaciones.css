@@ -178,6 +178,7 @@ header {
 
 /*-----------------FIN HEADER-----------------*/
 
+/*----------------------------------INICIO STYLES ITEM----------------------------------*/
 /*-----------------INICIO MAIN-----------------*/
 /*----PERSONAJE----*/
 .item-collection {
@@ -220,22 +221,29 @@ header {
   font-family: var(--primary-font);
 }
 
-.item-btn {
-  display: inline;
-  padding: var(--spacing-8) var(--spacing-8);
+.item-cantidad{
+  color: var(--light-solid-font);
+  background-color: #4F4F4F;
+  border: none;
+  width: 18px;
+  height: 16px;
+}
+
+.item-input{
   font-size: var(--font-small);
-  width: 25%;
-  height: 90%;
+  color: #747474;
+  border-color: #C9C9C9;
+  border-width: thin;
+  width: 105.47px;
+  height: 35.24px;
   text-align: center;
 }
 
-/*FALTA SEPARAR DE BOTONES Y CAMBIARLOS*/
-
-.item-btn-carrito {
+.item-btn-carrito{
   background-color: var(--primario-solido);
   color: var(--light-solid-font);
   border: none;
-  display: inline;
+  display:inline;
   padding: var(--spacing-8) var(--spacing-16);
   font-size: var(--font-xsmall);
   font-family: var(--primary-font);
@@ -243,36 +251,53 @@ header {
   position: relative;
 }
 
-.item-btn-carrito:hover {
+.item-btns {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 0.3rem;
+}
+
+.item-btn-carrito:hover{
   background-color: var(--primario-900);
 }
 
 /*----INICIO SLIDER----SIRVE PARA TODAS LAS PÁGS QUE TENGAS ESE ESTILO DE TARJETAS*/
 
-.slider {
-  display: flex;
+.slider{
+  display:flex;
   flex-direction: column;
   gap: var(--spacing-36);
-  margin: var(--spacing-68) auto;
+  margin:var(--spacing-68) auto;
 }
 
-.slider-title {
+.slider-title{
   font-family: var(--second-font);
   font-size: var(--font-display);
-  text-transform: uppercase;
+  text-transform: uppercase; 
 }
 
-.slider-items {
-  display: flex;
-  gap: var(--spacing-24);
+/*----MISION 3----*/
+iconify-icon{
+  color: var(--dark-bg-solid);
+  font-size: var(--font-small);
+  font-weight: 700;
 }
 
-.card-item-cover {
-  display: flex;
+.glide__arrow--left {
+  left: 0;
+}
+
+.glide__arrow--right {
+  right: 0;
+}
+/*----FIN MISION 3----*/
+
+.card-item-cover{
+  display:flex;
   position: relative;
 }
 
-.card-item-tag {
+.card-item-tag{
   font-size: var(--font-xsmall);
   text-transform: uppercase;
   background-color: var(--primario-solido);
@@ -282,49 +307,51 @@ header {
   right: 0;
 }
 
-.card-item-cover img {
+.card-item-cover img{
   animation: fade .7s;
 }
 
-.card-item-img--back {
+.card-item-img--back{
   display: none;
 }
 
-.card-item-cover:hover .card-item-img--back {
+.card-item-cover:hover .card-item-img--back{
   display: block;
 }
 
-.card-item-cover:hover .card-item-img--front {
+.card-item-cover:hover .card-item-img--front{
   display: none;
 }
 
-.card-item-content {
-  display: flex;
+.card-item-content{
+  display:flex;
   flex-direction: column;
   gap: var(--spacing-12);
-  padding: var(--spacing-16);
+  padding:var(--spacing-16);
 }
 
-.card-item-licence {
+.card-item-licence{
   font-size: var(--font-xsmall);
   font-weight: 500;
 }
 
-.card-item-name {
+.card-item-name{
   font-size: var(--font-medium);
   font-weight: 700;
 }
 
-.card-item-price {
+.card-item-price{
   font-size: var(--font-xsmall);
 }
 
-.card-item-promo {
+.card-item-promo{
+  display: flex;
   font-size: var(--font-xsmall);
   color: var(--secundario-solido);
   font-weight: 700;
+  gap: 1rem;
+  align-items: center;
 }
-
 /*Animation*/
 @keyframes fade {
   0% {
@@ -338,6 +365,8 @@ header {
 
 /*----FIN SLIDER----*/
 /*-----------------FIN MAIN-----------------*/
+
+/*----------------------------------FIN STYLES ITEM----------------------------------*/
 
 /*-----------------INICIO FOOTER-----------------*/
 
