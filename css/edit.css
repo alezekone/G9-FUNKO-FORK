@@ -72,7 +72,7 @@
     font-weight: 400;
     line-height: normal;
     text-decoration: var(--primario-900) 2px solid underline;
-    outline: none;
+    border: none;
     }
 #descripcion{
     width: 63rem;
@@ -114,7 +114,8 @@
     font-weight: 400;
     line-height: normal;
     letter-spacing: 0.72px;
-    text-decoration: var(--primario-900) 2px solid underline;
+    text-decoration: var(--primario-900) 2px underline solid;
+    border: none;
 }
 #cuotas{
     width: 21.6rem;
