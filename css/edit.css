@@ -179,3 +179,32 @@
 .link_edit:hover{
     background-color: var(--primario-900);
 }
+/*css contacto*/
+.contacto{
+    margin:  var(--spacing-36)var(--spacing-68);
+}
+.titulo-contacto{
+    margin: var(--spacing-12) 0;
+    color: var(--dark-solido);
+    font-family: var(--second-font);
+    font-size: var(--font-xlarge);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.68px;
+}
+.lista-contacto{
+    color: var(--dark-solido);
+    font-family: var(--second-font);
+    font-size: var(--font-large);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.68px;
+}
+.lista-contacto li{
+    margin: var(--spacing-36);
+}
+.logo-whats{
+    width: 2%;
+}
