@@ -72,6 +72,7 @@
     font-weight: 400;
     line-height: normal;
     text-decoration: var(--primario-900) 2px solid underline;
+    outline: none;
     }
 #descripcion{
     width: 63rem;
