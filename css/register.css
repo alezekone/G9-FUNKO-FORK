@@ -1,19 +1,3 @@
-.nav-edit{
-    display: flex;
-    justify-content: space-between;
-}
-.items-nav-edit{
-    width: 30%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: var(--second-font);
-    font-size: var(--font-xsmall);
-    color: var(--light-solid-font);
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
 .register-container {
     width: 100%;
 }
@@ -47,20 +31,6 @@
     letter-spacing: 1.28px;
     margin-top: 0;
 }
-.register-submit {
-    width: 102.995px;
-    height: 39.062px;
-    flex-shrink: 0;
-    background: #F33;
-    color: #FFF;
-    font-family: Inter;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
-}
-
 
 .register-form-item {
     display: flex; 
@@ -88,11 +58,9 @@
     border-right: 0;
     font-family: var(--base-font);
     font-size: 1.8rem;
-    color: #B9B9B9;
+    color: var(--dark-solido);
 }
-.register-form-controller{
-    margin-bottom: var(--spacing-36);
-}
+
 .register-form-aceptar {
     color: var(--dark-solido);
     font-family: var(--base-font);
@@ -105,7 +73,27 @@
 }
 .register-submit{
     margin-left: var(--spacing-36);
+    background-color: var(--primario-solido);
+  color: var(--light-solid-font);
+  border: none;
+  display:inline;
+  padding: var(--spacing-8) var(--spacing-16);
+  font-size: var(--font-xsmall);
+  font-family: var(--primary-font);
+  transition: background .3s ease-in-out;
+  position: relative;
+  margin-bottom: 40px;
+  width: 103px;
+  height: 39.06px;
+  font-weight: 200;
+  margin-right: 20px;
+  cursor: pointer;
 }
+
+.register-submit:hover{
+    background-color: var(--primario-900);
+  }
+
 .register-terminos-condiciones{
     color: var(--secundario-900);
     font-family: var(--base-font);
@@ -113,32 +101,4 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-}
-.footer_edit{
-    height: 343px;
-}
-.footer_nav_edit{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.footer_li_edit{
-    color: var(--light-solid-font);
-    font-family: var(--second-font);
-    font-size: var(--font-xsmall);
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin: 1.25rem 0;
-    
-}
-.footer_p_edit{
-    font-size: var(--font-xsmall);
-}
-.link_edit{
-    padding: var(--spacing-8) var(--spacing-16);
-    transition: background 0.5 ease-in-out;
-}
-.link_edit:hover{
-    background-color: var(--primario-900);
 }

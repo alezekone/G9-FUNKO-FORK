@@ -42,6 +42,7 @@
   --font-medium:1.8em;
   --font-small: 1.6em;
   --font-xsmall: 1.4em;
+  --font-xxsmall: 1em;
   
   /*Espaciados*/
 
@@ -56,11 +57,6 @@
   --spacing-8: 0.8rem;
 
 }
-
-
-
-
-
 
 
 * {
@@ -113,6 +109,11 @@ img{
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; }
 
 /*-----------------INICIO HEADER-----------------*/
 
@@ -249,7 +250,7 @@ header {
 /*****************  INICIO MAIN DE INDEX.HTML  *****************/
 .index-main-container {
   max-width: 1200px ;
-  margin: 0 auto;
+  margin: 0;
 }
 .index-collection {
   display: grid;
@@ -257,6 +258,11 @@ header {
   align-items: center;
   padding: var(--spacing-16) 0;
 }
+
+.index-collection-star-wars{
+  margin-left: 85px;
+}
+
 
 /*Cambiamos el orden para el segundo hijo de collection*/
 .index-collection:nth-child(2) .index-collection-cover {
@@ -300,9 +306,6 @@ header {
   background-color: var(--primario-900);
 }
 
-.index-collection-cover {
-
-}
 
 /*****************  FIN MAIN DE INDEX.HTML  *****************/
 
@@ -311,7 +314,11 @@ header {
 /***************  INICIO DE ULTIMOS LANZAMIENTOS  ****************/
 .container {
   max-width: 1200px ;
-  margin: 0 auto;
+  margin: 0px;
+}
+
+.container-b{
+  margin:40px;
 }
 
 /*****************  FIN DE ULTIMOS LANZAMIENTOS  *****************/
