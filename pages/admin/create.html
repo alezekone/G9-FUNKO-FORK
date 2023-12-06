@@ -4,40 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/create.css">
-    <link rel="stylesheet" href="/css/normalizaciones.css">
+    <link rel="stylesheet" href="../../css/create_Edit_contact.css">
+    <link rel="stylesheet" href="../../css/Normalizacioncss.css">
 
-    <title>Create</title>
+    <title>Create | Funkoshop</title>
 </head>
 
 <body>
     <header>
         <nav class="navbar container">
             <picture class="navbar-logo">
-                <a href="/pages/shop/home.html">
-                    <img src="/img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
+                <a href="../../index.html">
+                    <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
                 </a>
             </picture>
             <ul class="navbar-menu"> 
                 <li class="navbar-item">
-                    <a class="navbar-link"  href="/pages/admin/admin.html">VER TIENDA</a>
+                    <a class="navbar-link"  href="./admin.html">VER TIENDA</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="/pages/admin/admin.html">ADMIN</a>
+                    <a class="navbar-link" href="./admin.html">ADMIN</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="/pages/shop/home.html">SALIR</a>
+                    <a class="navbar-link" href="../../index.html">SALIR</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <main class="container"> 
+    <main class="container container-b"> 
         <form action="#" method="post">
             <h1 class="main-article">CREAR NUEVO ITEM</h1>
             <article class="main-article">
                 <label for="categoria">Categoría:</label>
-                <select id="categoria" name="categoria">
+                <select class="create-input" id="categoria" name="categoria">
                     <option value="" disabled selected>Seleccionar</option>
                     <option value="opcion1">Opción 1</option>
                     <option value="opcion2">Opción 2</option>
@@ -45,7 +45,7 @@
                 </select>
             
                 <label for="licencia">Licencia:</label>
-                <select id="licencia" name="licencia" img src="/img/material-symbols_arrow-drop-down-rounded.svg" alt="">
+                <select class="create-input" id="licencia" name="licencia" img src="/img/material-symbols_arrow-drop-down-rounded.svg" alt="">
                     <option value="" disabled selected>Seleccionar</option>
                     <option value="opcion1">Opción 1</option>
                     <option value="opcion2">Opción 2</option>
@@ -55,28 +55,28 @@
 
             <article class="main-article">
                 <label class="form-label" for="nombre">Nombre del Producto:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Kakashi Hatake Shippuden Saga">
+                <input class="create-input" type="text" id="nombre" name="nombre" placeholder="Kakashi Hatake Shippuden Saga">
             </article>
             
-            <textarea id="descripcion" name="descripcion" placeholder="Descripción del producto"></textarea>
+            <textarea class="create-input" id="descripcion" name="descripcion" placeholder="Descripción del producto"></textarea>
             
             <article class="main-article">
                 <label for="sku">SKU:</label>
-                <input type="text" id="sku" name="sku">
+                <input class="create-input" type="text" id="sku" name="sku" placeholder="SSK111AB001">
             
                 <label for="precio">Precio:</label>
-                <input type="number" id="precio" name="precio">
+                <input class="create-input" type="text" id="precio" name="precio" placeholder="$ 0.000,00">
                 
                 <label for="stock">Stock:</label>
-                <input type="number" id="stock" name="stock">
+                <input class="create-input" min="0" type="number" id="stock" name="stock" placeholder="0">
             </article>
             
             <article class="main-article">
                 <label for="descuento">Descuento:</label>
-                <input type="number" id="descuento" name="descuento">
+                <input class="create-input" type="text" id="descuento" name="descuento" value="0%">
                 
                 <label for="cuotas">Cuotas:</label>
-                <select id="cuotas" name="cuotas">
+                <select class="create-input" id="cuotas" name="cuotas">
                     <option value="" disabled selected>3 cuotas sin interés</option>
                     <option value="opcion1">Opción 1</option>
                     <option value="opcion2">Opción 2</option>
@@ -92,8 +92,8 @@
             
 
             <article class="main-article">
-                <input class="main-btn" type="submit" value="Agregar Producto">
-                <input class="main-btn" type="button" onclick="limpiarFormulario()" value="Limpiar">
+                <input class="edit-modificar" type="submit" value="Agregar Producto">
+                <input class="edit-modificar" type="button" onclick="limpiarFormulario()" value="Limpiar">
             </article>
         </form>
     
@@ -108,16 +108,16 @@
         <nav class="navbar container">
             <ul class="navbar-item">
                 <li class="navbar-item">
-                    <a class="navbar-link" href="#">SHOP</a>
+                    <a class="navbar-link" href="../shop/shop.html">SHOP</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="#">REGISTRARSE</a>
+                    <a class="navbar-link" href="./register.html">REGISTRARSE</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="#">INGRESAR</a>
+                    <a class="navbar-link" href="./login.html">INGRESAR</a>
                 </li>
                 <li class="navbar-item">
-                    <a class="navbar-link" href="#">CONTACTO</a>
+                    <a class="navbar-link" href="../shop/contacto.html">CONTACTO</a>
                 </li>
             </ul>
             <picture>

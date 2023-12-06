@@ -11,20 +11,23 @@
 
 <body>
     <header>
-        <nav class="nav-edit container">
-
-            <picture>
+        <nav class="navbar container">
+            <picture class="navbar-logo">
                 <a href="../../index.html">
                     <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
                 </a>
             </picture>
-
-            <ul class="items-nav-edit">
-                <li><a class="link_edit" href="../shop/shop.html">VER TIENDA</a></li>
-                <li><a class="link_edit" href="../admin/admin.html">ADMIN</a></li>
-                <li><a class="link_edit" href="../../index.html">SALIR</a></li>
+            <ul class="navbar-menu"> 
+                <li class="navbar-item">
+                    <a class="navbar-link"  href="../admin/admin.html">VER TIENDA</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="../admin/admin.html">ADMIN</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="../../index.html">SALIR</a>
+                </li>
             </ul>
-
         </nav>
     </header>
 
@@ -43,16 +46,18 @@
                 </div>
                 <div class="register-form-item">
                     <label for="email">Email:</label>
-                    <input class="input-register" type="password" name="email" placeholder="johndoe@correo.com" />
+                    <input class="input-register" type="email" name="email" placeholder="johndoe@correo.com" />
                 </div>
                 <div class="register-form-item">
                     <label for="contrasena">Contraseña:</label>
-                    <input class="input-register" type="password" name="contrasena" value="123456789" />
+                    <input class="input-register" type="password" name="contrasena" placeholder="••••••••••" />
                 </div>
                 <div class="register-form-item">
                     <label for="repcontrasena">Repita Contraseña:</label>
-                    <input class="input-register" type="password" name="repcontrasena" value="123456789" />
+                    <input class="input-register" type="password" name="repcontrasena" placeholder="••••••••••" />
                 </div>
+
+                <br>
                 <div class="register-form-controller">
                     <input type="submit" value="Registrar" class="register-submit">
 
@@ -65,28 +70,27 @@
             </form>
         </div>
     </main>
-    <footer class="footer footer_edit container">
-        <section>
-            <nav class="footer_nav_edit container">
-                <div>
-                    <ul>
-                        <li class="footer_li_edit"><a class="link_edit" href="../shop/shop.html">SHOP</a></li>
-                        <li class="footer_li_edit"><a class="link_edit" href="../admin/register.html">REGISTRARSE</a>
-                        </li>
-                        <li class="footer_li_edit"><a class="link_edit" href="../admin/login.html">INGRESAR</a></li>
-                        <li class="footer_li_edit"><a class="link_edit" href="#">CONTACTO</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <picture>
-                        <img width="143px" height="116px" src="../../img/branding/isotype.svg"
-                            alt="Isologotipo de la marca Funkoshop">
-                    </picture>
-                </div>
-            </nav>
-        </section>
-        <p class="footer-copy footer_p_edit">All rights reserved 2022 - Funkoshop &copy;</p>
-
+    <footer class="footer">
+        <nav class="navbar container">
+            <ul class="navbar-item">
+                <li class="navbar-item">
+                    <a class="navbar-link" href="../shop/shop.html">SHOP</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="./register.html">REGISTRARSE</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="./login.html">INGRESAR</a>
+                </li>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="../shop/contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+            <picture>
+                <img src="/img/branding/isotype.svg" alt="Logo de la tienda" class="footer-logo">
+            </picture>
+        </nav>
+        <p class="footer-copy">All rights reserved 2023 - FUNKOSHOP &copy;</p>
     </footer>
 </body>
 
