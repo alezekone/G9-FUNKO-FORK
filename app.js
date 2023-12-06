@@ -7,6 +7,16 @@ const shopRoutes = require('./src/routes/shopRoutes');
 const adminRoutes = require('./src/routes/adminRoutes');
 const authRoutes = require('./src/routes/authRoutes');
 
+app.use(express.urlencoded ({extended: false}));
+app.use(express.json());
+
+app.set('views', './src/views');
+app.set('view engine', 'ejs');
+
+app.use('/negra', (req, res)=>{
+    res.render('pruebita', {usuario: "negra"});
+});
+
 app.use(express.static('public'));
 app.use('/', mainRoutes);
 app.use('/shop', shopRoutes);
