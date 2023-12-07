@@ -1,78 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/create_Edit_contact.css">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <link rel="stylesheet" href="../../css/Normalizacioncss.css">
+
     <title>Admin | Funkoshop</title>
 </head>
+
 <body>
-    <!--  ************* HEADER ****************  -->
     <header>
-        <nav>
-            <picture>
-                <!--poner enlace a pagina principal-->
-                <a href="../index.html">
-                    <img src="../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
+        <nav class="navbar container">
+            <picture class="navbar-logo">
+                <a href="../../index.html">
+                    <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
                 </a>
             </picture>
-            <ul> 
-                <li>
-                    <a href="../pages/shop.html">SHOP</a>
+            <ul class="navbar-menu"> 
+                <li class="navbar-item">
+                    <a class="navbar-link"  href="./admin.html">VER TIENDA</a>
                 </li>
-                <li>
-                    <a href="../pages/contact.html">CONTACTO</a>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="./admin.html">ADMIN</a>
                 </li>
-                <li>
-                    <a href="../pages/login.html">LOGIN</a>
-                </li>
-                <li>
-                    <a href="../pages/cart.html">
-                        <img src="../img/icons/cart-icon.svg " alt="icono de carrito">
-	                </a>
+                <li class="navbar-item">
+                    <a class="navbar-link" href="../../index.html">SALIR</a>
                 </li>
             </ul>
-        
         </nav>
     </header>
 
     <!--  ************* MAIN ****************  -->
-    <main> 
-        <section>
-            <ul>
-                <li> 
-                    <!-- Supongo que la etiqueta "img" irá dentro de una etiqueta "a:ref" como el carrito,-->
-                    <!-- pero no estoy seguro porque no conduce a una página. Veremos. -->
-                    <!-- Probablemente todo esto deba ser un form. Veremos. -->
-                    <button type="button">
-                        <img src="../img/icons/search_icon.svg" alt="icono de lupa">
-                    </button>
-                </li>
-                <li>
-                    <input type="search" name="admin_buscar" id="admin_buscar">
-                </li>
-            </ul>
+    <main>
+        <section class="admin-search">
+        <div>
+            <button class="search-button" type="button">
+                <img src="../../img/icons/search_icon.svg" alt="icono de lupa">
+            </button> 
+        </div>
+        <div>
+            <input class="buscador" type="search" name="admin_buscar" id="admin_buscar" placeholder="código, nombre o categoria">
+        </div>
         </section>
 
-        <section>
-            <article>
-                <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/header -->
-                <header>
-                    <h1>LISTADO DE PRODUCTOS</h1>
-                    <P>AGREGAR</P>
-                    <button type="button">
-                        <img src="../img/icons/plus_icon.svg" alt="icono de agregar">
-                    </button>
+        <br>
+    
+        <div class="admin-container">
+            <div class="table_header">
+                <h1>LISTADO DE PRODUCTOS</h1>
+                <div class="admin-btn-plus">
+                <p>AGREGAR</p> <!--Falta centrar y negrita-->
+                <button type="button"> <!--Falta sacar border-->
+                    <img src="../../img/icons/plus_icon.svg" alt="icono de agregar">
+                </button>
+                </div>
+            </div>
+        </div> 
+        
+        <br>
+        <br>
 
-                </header>
-
-            </article>
+        <section class="section-container">
             <table>
                 <thead>
                     <tr>
                         <th>ID</th>
                         <th>Código</th>
                         <th>Nombre del Producto</th>
-                        <th colspan="3">Categoría</th>
+                        <th>Categoría</th>
+                        <th> </th>
                     </tr>
                 </thead>
                 <tbody>
@@ -81,243 +80,277 @@
                         <td>STW001001</td>
                         <td>Baby Yoda Blueball</td>
                         <td>STAR WARS</td>
-                        <td>
-                            <a href="../pages/edit.html">
-                                <img src="../img/icons/edit_pencil.svg " alt="icono de edición">
-                            </a>
-                        </td>
-                        <td>
-                            <!-- https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button -->
-                            <button type="button">
-                                <img src="../img/icons/delete_trash.svg" alt="icono de borrado">
+                        <td class="pencil_trash">
+                            <button type="submit">
+                                <a href="./edit.html">
+                                <img src="../../img/icons/edit_pencil.svg">
+                                </a>
                             </button>
+                            <form action="./admin.html">
+                                <button type="reset">
+                                    <img src="../../img/icons/delete_trash.svg">
+                                </button>
+                            </form>
                         </td>
                     </tr>
+
                     <tr>
                         <td>2</td>
                         <td>STW001002</td>
                         <td>Boba Fett Fighter</td>
                         <td>STAR WARS</td>
-                        <td>
-                            <a href="../pages/edit.html">
-                                <img src="../img/icons/edit_pencil.svg " alt="icono de edición">
-                            </a>
-                        </td>
-                        <td>
-                            <button type="button">
-                                <img src="../img/icons/delete_trash.svg" alt="icono de borrado">
+                        <td class="pencil_trash">
+                            <button type="submit">
+                                <a href="./edit.html">
+                                <img src="../../img/icons/edit_pencil.svg">
+                                </a>
                             </button>
+                            <form action="./admin.html">
+                                <button type="reset">
+                                    <img src="../../img/icons/delete_trash.svg">
+                                </button>
+                            </form>
                         </td>
                     </tr>
+
                     <tr>
                         <td>3</td>
                         <td>STW001003</td>
                         <td>Luke Skylwalker & Grogu</td>
                         <td>STAR WARS</td>
-                        <td>
-                            <a href="../pages/edit.html">
-                                <img src="../img/icons/edit_pencil.svg " alt="icono de edición">
-                            </a>
-                        </td>
-                        <td>
-                            <button type="button">
-                                <img src="../img/icons/delete_trash.svg" alt="icono de borrado">
+                        <td class="pencil_trash">
+                            <button type="submit">
+                                <a href="./edit.html">
+                                <img src="../../img/icons/edit_pencil.svg">
+                                </a>
                             </button>
+                            <form action="./admin.html">
+                                <button type="reset">
+                                    <img src="../../img/icons/delete_trash.svg">
+                                </button>
+                            </form>
                         </td>
                     </tr>
+
                     <tr>
                         <td>4</td>
                         <td>STW001004</td>
                         <td>Stormtrooper Lightsaber</td>
                         <td>STAR WARS</td>
-                        <td>
-                            <a href="../pages/edit.html">
-                                <img src="../img/icons/edit_pencil.svg " alt="icono de edición">
-                            </a>
-                        </td>
-                        <td>
-                            <button type="button">
-                                <img src="../img/icons/delete_trash.svg" alt="icono de borrado">
+                        <td class="pencil_trash">
+                            <button type="submit">
+                                <a href="./edit.html">
+                                <img src="../../img/icons/edit_pencil.svg">
+                                </a>
                             </button>
+                            <form action="./admin.html">
+                                <button type="reset">
+                                    <img src="../../img/icons/delete_trash.svg">
+                                </button>
+                            </form>
                         </td>
                     </tr>
+
                     <tr>
                         <td>5</td>
                         <td>PKM001001</td>
                         <td>Charmander Smiley</td>
                         <td>POKEMON</td>
-                        <td>
-                            <a href="../pages/edit.html">
-                                <img src="../img/icons/edit_pencil.svg " alt="icono de edición">
-                            </a>
-                        </td>
-                        <td>
-                            <button type="button">
-                                <img src="../img/icons/delete_trash.svg" alt="icono de borrado">
+                        <td class="pencil_trash">
+                            <button type="submit">
+                                <a href="./edit.html">
+                                <img src="../../img/icons/edit_pencil.svg">
+                                </a>
                             </button>
+                            <form action="./admin.html">
+                                <button type="reset">
+                                    <img src="../../img/icons/delete_trash.svg">
+                                </button>
+                            </form>
                         </td>
                     </tr>
+
                     <tr>
                         <td>6</td>
                         <td>PKM001002</td>
-                        <td>Dragonite Hi! </td>
+                        <td>Dragonite Hi!</td>
                         <td>POKEMON</td>
-                        <td>
-                            <a href="../pages/edit.html">
-                                <img src="../img/icons/edit_pencil.svg " alt="icono de edición">
-                            </a>
-                        </td>
-                        <td>
-                            <button type="button">
-                                <img src="../img/icons/delete_trash.svg" alt="icono de borrado">
+                        <td class="pencil_trash">
+                            <button type="submit">
+                                <a href="./edit.html">
+                                <img src="../../img/icons/edit_pencil.svg">
+                                </a>
                             </button>
+                            <form action="./admin.html">
+                                <button type="reset">
+                                    <img src="../../img/icons/delete_trash.svg">
+                                </button>
+                            </form>
                         </td>
                     </tr>
+
                     <tr>
                         <td>7</td>
                         <td>PKM001003</td>
                         <td>Pidgeotto Flying</td>
                         <td>POKEMON</td>
-                        <td>
-                            <a href="../pages/edit.html">
-                                <img src="../img/icons/edit_pencil.svg " alt="icono de edición">
-                            </a>
-                        </td>
-                        <td>
-                            <button type="button">
-                                <img src="../img/icons/delete_trash.svg" alt="icono de borrado">
+                        <td class="pencil_trash">
+                            <button type="submit">
+                                <a href="./edit.html">
+                                <img src="../../img/icons/edit_pencil.svg">
+                                </a>
                             </button>
+                            <form action="./admin.html">
+                                <button type="reset">
+                                    <img src="../../img/icons/delete_trash.svg">
+                                </button>
+                            </form>
                         </td>
                     </tr>
+
                     <tr>
                         <td>8</td>
                         <td>PKM001004</td>
                         <td>Pikachu Smiley</td>
                         <td>POKEMON</td>
-                        <td>
-                            <a href="../pages/edit.html">
-                                <img src="../img/icons/edit_pencil.svg " alt="icono de edición">
-                            </a>
-                        </td>
-                        <td>
-                            <button type="button">
-                                <img src="../img/icons/delete_trash.svg" alt="icono de borrado">
+                        <td class="pencil_trash">
+                            <button type="submit">
+                                <a href="./edit.html">
+                                <img src="../../img/icons/edit_pencil.svg">
+                                </a>
                             </button>
+                            <form action="./admin.html">
+                                <button type="reset">
+                                    <img src="../../img/icons/delete_trash.svg">
+                                </button>
+                            </form>
                         </td>
                     </tr>
+
                     <tr>
                         <td>9</td>
                         <td>PKM001005</td>
                         <td>Vulpix Fancy</td>
                         <td>POKEMON</td>
-                        <td>
-                            <a href="../pages/edit.html">
-                                <img src="../img/icons/edit_pencil.svg " alt="icono de edición">
-                            </a>
-                        </td>
-                        <td>
-                            <button type="button">
-                                <img src="../img/icons/delete_trash.svg" alt="icono de borrado">
+                        <td class="pencil_trash">
+                            <button type="submit">
+                                <a href="./edit.html">
+                                <img src="../../img/icons/edit_pencil.svg">
+                                </a>
                             </button>
+                            <form action="./admin.html">
+                                <button type="reset">
+                                    <img src="../../img/icons/delete_trash.svg">
+                                </button>
+                            </form>
                         </td>
                     </tr>
+
                     <tr>
                         <td>10</td>
                         <td>HPT001001</td>
                         <td>Harry Potter & Hegwid</td>
                         <td>HARRY POTTER</td>
-                        <td>
-                            <a href="../pages/edit.html">
-                                <img src="../img/icons/edit_pencil.svg " alt="icono de edición">
-                            </a>
-                        </td>
-                        <td>
-                            <button type="button">
-                                <img src="../img/icons/delete_trash.svg" alt="icono de borrado">
+                        <td class="pencil_trash">
+                            <button type="submit">
+                                <a href="./edit.html">
+                                <img src="../../img/icons/edit_pencil.svg">
+                                </a>
                             </button>
+                            <form action="./admin.html">
+                                <button type="reset">
+                                    <img src="../../img/icons/delete_trash.svg">
+                                </button>
+                            </form>
                         </td>
                     </tr>
+
                     <tr>
                         <td>11</td>
                         <td>HPT001002</td>
                         <td>Herminione Ball Dress</td>
                         <td>HARRY POTTER</td>
-                        <td>
-                            <a href="../pages/edit.html">
-                                <img src="../img/icons/edit_pencil.svg " alt="icono de edición">
-                            </a>
-                        </td>
-                        <td>
-                            <button type="button">
-                                <img src="../img/icons/delete_trash.svg" alt="icono de borrado">
+                        <td class="pencil_trash">
+                            <button type="submit">
+                                <a href="./edit.html">
+                                <img src="../../img/icons/edit_pencil.svg">
+                                </a>
                             </button>
+                            <form action="./admin.html">
+                                <button type="reset">
+                                    <img src="../../img/icons/delete_trash.svg">
+                                </button>
+                            </form>
                         </td>
                     </tr>
+
                     <tr>
                         <td>12</td>
                         <td>HPT001003</td>
                         <td>Luna Lovegood Lion Mask</td>
                         <td>HARRY POTTER</td>
-                        <td>
-                            <a href="../pages/edit.html">
-                                <img src="../img/icons/edit_pencil.svg " alt="icono de edición">
-                            </a>
-                        </td>
-                        <td>
-                            <button type="button">
-                                <img src="../img/icons/delete_trash.svg" alt="icono de borrado">
+                        <td class="pencil_trash">
+                            <button type="submit">
+                                <a href="./edit.html">
+                                <img src="../../img/icons/edit_pencil.svg">
+                                </a>
                             </button>
+                            <form action="./admin.html">
+                                <button type="reset">
+                                    <img src="../../img/icons/delete_trash.svg">
+                                </button>
+                            </form>
                         </td>
                     </tr>
+
                     <tr>
                         <td>13</td>
                         <td>HPT001004</td>
                         <td>Snape Patronus</td>
                         <td>HARRY POTTER</td>
-                        <td>
-                            <a href="../pages/edit.html">
-                                <img src="../img/icons/edit_pencil.svg " alt="icono de edición">
-                            </a>
-                        </td>
-                        <td>
-                            <button type="button">
-                                <img src="../img/icons/delete_trash.svg" alt="icono de borrado">
+                        <td class="pencil_trash">
+                            <button type="submit">
+                                <a href="./edit.html">
+                                <img src="../../img/icons/edit_pencil.svg">
+                                </a>
                             </button>
+                            <form action="./admin.html">
+                                <button type="reset">
+                                    <img src="../../img/icons/delete_trash.svg">
+                                </button>
+                            </form>
                         </td>
                     </tr>
                 </tbody>
             </table>
-            
         </section>
+    
     </main>
 
     <!--  ************* FOOTER ****************  -->
 
-    <footer>
-        <section>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="../pages/shop.html">SHOP</a>
+<footer class="footer"> 
+        <nav class="navbar container">
+                <ul class="navbar-item">
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="../shop/shop.html">SHOP</a
+                            ></li>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="./register.html">REGISTRARSE</a>
                     </li>
-                    <li>
-                        <a href="../pages/register.html">REGISTRARSE</a>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="./login.html">LOGIN</a>
                     </li>
-                    <li>
-                        <a href="../pages/login.html">LOGIN</a>
+                    <li class="navbar-item">
+                        <a class="navbar-link" href="../shop/contacto.html">CONTACTO</a>
                     </li>
-                    <li>
-                        <a href="../pages/contact.html">CONTACTO</a>
-                    </li>                    
                 </ul>
                 <picture>
-                    <img src="../img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
-
+                    <img src="../../img/branding/isotype.svg" alt="Isotipo de la Marca Funkoshop">
                 </picture>
-            </nav>
-        </section>
-        <p>All rights reserved 2023 - Funkoshop &copy;</p>
-    </footer>
+        </nav>
+        <p class="footer-copy">All rights reserved 2023 - Funkoshop &copy;</p>
+</footer>
     
 </body>
 </html>
