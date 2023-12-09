@@ -122,23 +122,23 @@ header {
   padding: var(--spacing-36);
 }
 
-.navbar{
-  display:flex;
+.navbar {
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.navbar-logo{
+.navbar-logo {
   max-width: 300px;
 }
 
-.navbar-menu{
+.navbar-menu {
   display: flex;
   align-items: center;
   gap: var(--spacing-20)
 }
 
-.navbar-link{
+.navbar-link {
   font-size: var(--font-medium);
   padding: var(--spacing-8) var(--spacing-16);
   display: inline-block;
@@ -146,38 +146,37 @@ header {
   position: relative;
 }
 
-.navbar-link:hover{
-  background-color:var(--primario-900);
+.navbar-link:hover {
+  background-color: var(--primario-900);
 }
 
 /*--ES UNIVERSAL PARA CUALQUIER ELEMENTO QUE TENGO UN ICONO AL LADO--*/
-.with-icon{
-  display:flex;
+.with-icon {
+  display: flex;
   align-items: center;
   gap: var(--spacing-8);
 }
 /*--FIN--*/
 
-.with-submenu:hover .submenu{
+.with-submenu:hover .submenu {
   display: block;
 }
 
-.submenu{
+.submenu {
   display: none;
   width: 300px;
   position: absolute;
   background-color: var(--dark-bg-solid);
-  z-index: 3;
 }
 
-.submenu-link{
-  display:block;
+.submenu-link {
+  display: block;
   padding: var(--spacing-8) var(--spacing-16);
   font-size: var(--font-medium);
   transition: background .3s ease-in-out;
 }
 
-.submenu-link:hover{
+.submenu-link:hover {
   background-color: var(--primario-900);
 }
 
