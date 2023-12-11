@@ -1,3 +1,7 @@
+const testData = require('../model/datos');
+
+console.log(testData);
+
 const shopControllers = {
     shop_get : (req, res) => res.render('shop/shop',{}),    // "Ruta para la vista de Shop."
     shop_item_get : (req, res) => res.render('shop/item',{}),
