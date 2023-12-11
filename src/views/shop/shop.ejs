@@ -95,12 +95,15 @@
                 <a class="card-item-link" href="./item.html">
                   <picture class="card-item-cover">
                     <span class="card-item-tag">Nuevo</span>
-                    <img class="card-item-img--front" src="../../img/pokemon/pidgeotto-1.webp" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon">
-                    <img class="card-item-img--back" src="../../img/pokemon/pidgeotto-box.webp" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon en caja">
+<!--                <img class="card-item-img--front" src="../../img/pokemon/pidgeotto-1.webp" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon">  -->
+<!--                <img class="card-item-img--back" src="../../img/pokemon/pidgeotto-box.webp" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon en caja">  -->
+                    <img class="card-item-img--front" src="../../<%=data.at(0).img_front %>" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon">
+                    <img class="card-item-img--back" src="../../<%=data.at(0).img_back %>" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon en caja">
+
                   </picture>
                     <div class="card-item-content">
                         <p class="card-item-licence">POKEMON</p>
-                        <h4 class="card-item-name">PIDGEOTTO</h4>
+                        <h4 class="card-item-name"><!--PIDGEOTTO--> <%= data.at(0).product_name.toUpperCase() %></h4>
                         <p class="card-item-price">$1799,99</p>
                         <p class="card-item-promo">3 CUOTAS SIN INTERÉS</p>
                     </div>
