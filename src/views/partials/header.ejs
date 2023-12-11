@@ -1,17 +1,21 @@
 <header>
     <nav class="navbar container">
         <picture class="navbar-logo">
-            <a href="index.html">
-                <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
+            <!-- Antes era: index.html -->
+            <a href="http://localhost:4000">
+                <!-- Antes era: ./img/branding/logo_light_horizontal.svg -->
+                <img src="http://localhost:4000/img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
             </a>
         </picture>
         <ul class="navbar-menu"> 
             <li class="navbar-item with-submenu"> <!-- "    ./pages/shop/shop.html" -->
-                <a class="submenu-link with-icon" href="./shop">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
+                <!-- Antes era: /shop-->
+                <a class="submenu-link with-icon" href="http://localhost:4000/shop">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
                 <!-- Submenú de SHOP - Inicio -->
                 <ul class="submenu">
                     <li class="submenu-item">
-                        <a href="./shop" class="submenu-link">Funkos</a>    <!-- "./pages/shop/shop.html" -->
+                        <!-- Antes era: ./shop-->
+                        <a href="http://localhost:4000/shop" class="submenu-link">Funkos</a>    <!-- "./pages/shop/shop.html" -->
                     </li>
                     <li class="submenu-item">
                         <a href="" class="submenu-link">Remeras</a>
@@ -23,14 +27,18 @@
                 <!-- Submenú de SHOP - Fin -->
             </li>
             <li class="navbar-item">
-                <a class="navbar-link" href="./pages/shop/contacto.html">CONTACTO</a>
+                <!-- Antes: "./pages/shop/contacto.html" -->
+                <a class="navbar-link" href="http://localhost:4000/contact">CONTACTO</a>
             </li>
             <li class="navbar-item">
-                <a class="navbar-link" href="./pages/admin/login.html">LOGIN</a>
+                <!-- Antes: "./pages/admin/login.html" -->
+                <a class="navbar-link" href="http://localhost:4000/auth/login">LOGIN</a>
             </li>
             <li class="navbar-item">
-                <a class="navbar-carrito" href="./pages/shop/cart.html">
-                    <img src="./img/icons/cart-icon.svg" alt="icono de carrito">
+                <!-- Antes: "./pages/shop/cart.html" -->
+                <a class="navbar-carrito" href="http://localhost:4000/shop/cart">
+                    <!-- Antes: "./img/icons/cart-icon.svg" -->
+                    <img src="http://localhost:4000/img/icons/cart-icon.svg" alt="icono de carrito">
                 </a>
             </li>
         </ul>
