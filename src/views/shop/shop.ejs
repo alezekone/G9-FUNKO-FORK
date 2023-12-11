@@ -10,43 +10,12 @@
 </head>
 
   <body>
-    <header>
-      <nav class="navbar container">
-          <picture class="navbar-logo">
-              <a href="../../index.html">
-                  <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
-              </a>
-          </picture>
-          <ul class="navbar-menu">
-              <li class="navbar-item with-submenu">
-                  <a class="navbar-link with-icon" href="./shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
-                  <ul class="submenu">
-                      <li class="submenu-item">
-                          <a href="" class="submenu-link">Funkos</a>
-                      </li>
-                      <li class="submenu-item">
-                          <a href="" class="submenu-link">Remeras</a>
-                      </li>
-                      <li class="submenu-item">
-                          <a href="" class="submenu-link">Llaveros</a>
-                      </li>
-                  </ul>
-              </li>
-              <li class="navbar-item">
-                  <a class="navbar-link" href="./contacto.html">CONTACTO</a>
-              </li>
-              <li class="navbar-items">
-                  <a class="navbar-link" href="../admin/login.html">LOGIN</a>
-              </li>
-              <li class="navbar-items">
-                  <a class="navbar-carrito" href="./cart.html">
-                      <img src="../../img/icons/cart-icon.svg" alt="icono de carrito">
-                  </a>
-              </li>
-          </ul>
-      </nav>
-  </header>
-  
+  <!--  ************* HEADER ****************  -->
+
+  <%- include("partials/header") -%>
+
+  <!--  ************** MAIN *****************  -->
+
   <main class="container">
       <!--Filtros-->
       <section>
@@ -260,27 +229,10 @@
   </div>
 </main>
 
-<footer class="footer"> 
-      <nav class="navbar container">
-              <ul class="navbar-items">
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="./shop.html">SHOP</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="../admin/register.html">REGISTRARSE</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="../admin/login.html">INGRESAR</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="./contacto.html">CONTACTO</a>
-                    </li>                    
-                </ul>
-              <picture>
-                  <img src="../../img/branding/isotype.svg" alt="Isotipo de la Marca Funkoshop">
-              </picture>
-      </nav>
-      <p class="footer-copy">All rights reserved 2023 - Funkoshop &copy;</p>
-</footer>
+    <!--  ************* FOOTER ****************  -->
+
+    <%- include("partials/footer") -%>
+
+    <!--  ************* SCRIPTS ****************  -->
   </body>
 </html>

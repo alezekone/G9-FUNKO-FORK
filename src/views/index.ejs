@@ -10,45 +10,8 @@
 </head>
 <body>
     <!--  ************* HEADER ****************  -->
-    <header>
-        <nav class="navbar container">
-            <picture class="navbar-logo">
-                <a href="index.html">
-                    <img src="./img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca Funkoshop">
-                </a>
-            </picture>
-            <ul class="navbar-menu"> 
-                <li class="navbar-item with-submenu">
-                    <a class="submenu-link with-icon" href="./pages/shop/shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
-                    <!-- Submenú de SHOP - Inicio -->
-                    <ul class="submenu">
-                        <li class="submenu-item">
-                            <a href="./pages/shop/shop.html" class="submenu-link">Funkos</a>
-                        </li>
-                        <li class="submenu-item">
-                            <a href="" class="submenu-link">Remeras</a>
-                        </li>
-                        <li class="submenu-item">
-                            <a href="" class="submenu-link">Llaveros</a>
-                        </li>
-                    </ul>
-                    <!-- Submenú de SHOP - Fin -->
-                </li>
-                <li class="navbar-item">
-                    <a class="navbar-link" href="./pages/shop/contacto.html">CONTACTO</a>
-                </li>
-                <li class="navbar-item">
-                    <a class="navbar-link" href="./pages/admin/login.html">LOGIN</a>
-                </li>
-                <li class="navbar-item">
-                    <a class="navbar-carrito" href="./pages/shop/cart.html">
-                        <img src="./img/icons/cart-icon.svg" alt="icono de carrito">
-	                </a>
-                </li>
-            </ul>
-        
-        </nav>
-    </header>
+
+    <%- include("partials/header") -%>
 
     <!--  ************* HERO ****************  -->
 
@@ -165,29 +128,10 @@
 
     <!--  ************* FOOTER ****************  -->
 
-    <footer  class="footer">
-            <nav class="navbar container" >
-                <ul class="navbar-items">
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="./pages/shop/shop.html">SHOP</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="./pages/admin/register.html">REGISTRARSE</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="./pages/admin/login.html">INGRESAR</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="./pages/shop/contacto.html">CONTACTO</a>
-                    </li>                    
-                </ul>
-                <picture>
-                    <img src="./img/branding/isotype.svg" alt="Isotipo de la marca Funkoshop">
+    <%- include("partials/footer") -%>
 
-                </picture>
-            </nav>
-        <p class="footer-copy">All rights reserved 2023 - Funkoshop &copy;</p>
-    </footer>
+    <!--  ************* SCRIPTS ****************  -->
+
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="./js/glide.js"></script>

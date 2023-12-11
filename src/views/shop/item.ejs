@@ -9,43 +9,11 @@
     <link rel="stylesheet" href="../../css/item_shop.css">
 </head>
 <body>
-    <!-- Inicio header -->
-    <header>
-        <nav class="navbar container">
-            <picture class="navbar-logo">
-                <a href="../../index.html">
-                    <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca Funkoshop">
-                </a>
-            </picture>
-            <ul class="navbar-menu">
-                <li class="navbar-item with-submenu">
-                    <a class="navbar-link with-icon" href="./shop.html">SHOP<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
-                    <ul class="submenu">
-                        <li class="submenu-item">
-                            <a href="" class="submenu-link">Funkos</a>
-                        </li>
-                        <li class="submenu-item">
-                            <a href="" class="submenu-link">Remeras</a>
-                        </li>
-                        <li class="submenu-item">
-                            <a href="" class="submenu-link">Llaveros</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="navbar-item">
-                    <a class="navbar-link" href="./contacto.html">CONTACTO</a>
-                </li>
-                <li class="navbar-items">
-                    <a class="navbar-link" href="../admin/login.html">LOGIN</a>
-                </li>
-                <li class="navbar-items">
-                    <a class="navbar-carrito" href="./cart.html">
-                        <img src="../../img/icons/cart-icon.svg" alt="icono de carrito">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header> <!--Fin header-->
+  <!--  ************* HEADER ****************  -->
+
+  <%- include("partials/header") -%>
+
+  <!--  ************** MAIN *****************  -->
 
     <main class="main-container"> <!--Inicio main-->
         <section class="item-collection container">
@@ -133,28 +101,11 @@
             </div>
         </section>
     </main> <!--Fin main-->
-    <footer class="footer"> <!--Inicio footer-->
-        <nav class="navbar container">
-                <ul class="navbar-item">
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="./shop.html">SHOP</a
-                            ></li>
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="../admin/register.html">REGISTRARSE</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="../admin/login.html">INGRESAR</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a class="navbar-link" href="./contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
-                <picture>
-                    <img src="../../img/branding/isotype.svg" alt="Isotipo de la Marca Funkoshop">
-                </picture>
-        </nav>
-        <p class="footer-copy">All rights reserved 2023 - Funkoshop &copy;</p>
-    </footer> <!--Fin footer-->
+    <!--  ************* FOOTER ****************  -->
+
+    <%- include("partials/footer") -%>
+
+    <!--  ************* SCRIPTS ****************  -->
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="../../js/btns-item.js"></script>

@@ -18,12 +18,13 @@ app.use('/negra', (req, res)=>{
 });
 
 app.use(express.static('public'));
+// app.use('/', (req, res)=>res.redirect('/home'));
 app.use('/', mainRoutes);
 app.use('/shop', shopRoutes);
 app.use('/admin', adminRoutes);
 app.use('/auth', authRoutes);
 
-app.get('/ping', (req, res) => res.send('pong'));
+// app.get('/ping', (req, res) => res.send('pong'));
 app.listen(4000, () => console.log("Servidor corriendo en http://localhost:4000"));
 
 
