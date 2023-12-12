@@ -54,7 +54,7 @@ header {
   }
   
   .submenu-link {
-    display: block;
+    
     padding: var(--spacing-8) var(--spacing-16);
     font-size: var(--font-medium);
     transition: background .3s ease-in-out;
@@ -166,7 +166,7 @@ header {
   
   /*----MISION 3----*/
   iconify-icon{
-    color: var(--dark-bg-solid);
+    color: var(--light-bg-solid);
     font-size: var(--font-small);
     font-weight: 700;
   }
