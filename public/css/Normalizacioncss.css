@@ -137,13 +137,12 @@ header {
   gap: var(--spacing-20)
 }
 
+
 .navbar-link{
   font-size: var(--font-medium);
   padding: var(--spacing-8) var(--spacing-16);
-  display: inline-block;
   transition: background .3s ease-in-out;
-  position: relative;
-}
+  }
 
 .navbar-link:hover{
   background-color:var(--primario-900);
@@ -170,7 +169,7 @@ header {
 }
 
 .submenu-link{
-  display:block;
+  gap: var(--spacing-8);
   padding: var(--spacing-8) var(--spacing-16);
   font-size: var(--font-medium);
   transition: background .3s ease-in-out;
@@ -178,6 +177,9 @@ header {
 
 .submenu-link:hover{
   background-color: var(--primario-900);
+}
+.submenu-item{
+  height: var(--spacing-28);
 }
 
 /*-----------------FIN HEADER-----------------*/
@@ -300,9 +302,7 @@ header {
   background-color: var(--primario-900);
 }
 
-.index-collection-cover {
 
-}
 
 /*****************  FIN MAIN DE INDEX.HTML  *****************/
 
@@ -409,7 +409,7 @@ header {
 */
 
 iconify-icon {
-  color: var(--dark-bg-solid);
+  color: var(--light-bg-solid);
   font-size: var(--font-small);
   font-weight: 700;
 }

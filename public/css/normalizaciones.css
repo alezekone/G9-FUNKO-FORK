@@ -278,7 +278,7 @@ header {
 
 /*----MISION 3----*/
 iconify-icon{
-  color: var(--dark-bg-solid);
+  color: var(--light-bg-solid);
   font-size: var(--font-small);
   font-weight: 700;
 }
