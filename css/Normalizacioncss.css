@@ -149,6 +149,10 @@ header {
 .navbar-link:hover{
   background-color:var(--primario-900);
 }
+/* icono de chevron en blanco  */
+navbar-link iconify-icon{
+  color: white;
+}
 
 /*--ES UNIVERSAL PARA CUALQUIER ELEMENTO QUE TENGO UN ICONO AL LADO--*/
 .with-icon{
