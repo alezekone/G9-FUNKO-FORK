@@ -173,10 +173,12 @@ header {
   
   .glide__arrow--left {
     left: 0;
+    color: var(--dark-bg-solid);
   }
   
   .glide__arrow--right {
     right: 0;
+    color: var(--dark-bg-solid);
   }
   /*----FIN MISION 3----*/
   
