@@ -34,34 +34,40 @@ header {
   }
   
   /*--ES UNIVERSAL PARA CUALQUIER ELEMENTO QUE TENGO UN ICONO AL LADO--*/
-  .with-icon {
-    display: flex;
+  .with-icon{
+    display:flex;
     align-items: center;
     gap: var(--spacing-8);
+    font-size: var(--font-medium);
+    color: var(--light-solid-font);
+
   }
-  
   /*--FIN--*/
   
-  .with-submenu:hover .submenu {
+  .with-submenu:hover .submenu{
     display: block;
   }
   
-  .submenu {
+  .submenu{
     display: none;
     width: 300px;
     position: absolute;
     background-color: var(--dark-bg-solid);
+    z-index: 3;
   }
   
-  .submenu-link {
-    
+  .submenu-link{
+    gap: var(--spacing-8);
     padding: var(--spacing-8) var(--spacing-16);
     font-size: var(--font-medium);
     transition: background .3s ease-in-out;
   }
   
-  .submenu-link:hover {
+  .submenu-link:hover{
     background-color: var(--primario-900);
+  }
+  .submenu-item{
+    height: var(--spacing-28);
   }
   
   /*-----------------FIN HEADER-----------------*/

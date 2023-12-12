@@ -153,6 +153,10 @@ header {
   display:flex;
   align-items: center;
   gap: var(--spacing-8);
+  font-size: var(--font-medium);
+  color: var(--light-solid-font);
+  width:auto;
+  height: auto;
 }
 /*--FIN--*/
 
@@ -408,21 +412,21 @@ header {
 
 */
 
-iconify-icon{
-  color: var(--light-bg-solid);
-  font-size: var(--font-small);
-  font-weight: 700;
-}
-
-.glide__arrow--left {
-  left: 0;
-  color: var(--dark-bg-solid);
-}
-
-.glide__arrow--right {
-  right: 0;
-  color: var(--dark-bg-solid);
-}
+ iconify-icon{
+    color: var(--light-bg-solid);
+    font-size: var(--font-small);
+    font-weight: 700;
+  }
+  
+  .glide__arrow--left {
+    left: 0;
+    color: var(--dark-bg-solid);
+  }
+  
+  .glide__arrow--right {
+    right: 0;
+    color: var(--dark-bg-solid);
+  }
 
 /************** FIN SLIDER ****************/
 
