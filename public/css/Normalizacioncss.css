@@ -158,6 +158,7 @@ header {
   width:auto;
   height: auto;
 }
+
 /*--FIN--*/
 
 .with-submenu:hover .submenu{
@@ -486,6 +487,9 @@ header {
   font-size: var(--font-xsmall);
   color: var(--secundario-solido);
   font-weight: 700;
+}
+.iconify_carrousel{
+  color: var(--dark-bg-solid);
 }
  /*Animation*/
 @keyframes fade {
