@@ -19,14 +19,14 @@
     <main class="main-container"> <!--Inicio main-->
         <section class="item-collection container">
             <picture class="collection-cover card-item-cover">
-                <img class="card-item-img--front" src="../../img/star-wars/baby-yoda-1.webp" alt="Figura Funko coleccionable de Grogu perteneciente a la serie The Mandalorian">
-                <img class="card-item-img--back" src="../../img/star-wars/baby-yoda-box.webp" alt="Figura Funko coleccionable de Grogu perteneciente a la serie The Mandalorian en caja">
+                <img class="card-item-img--front" src="/img<%=item.image_front%>" alt="Figura Funko coleccionable de Grogu perteneciente a la serie The Mandalorian">
+                <img class="card-item-img--back" src="/img<%=item.image_back%>" alt="Figura Funko coleccionable de Grogu perteneciente a la serie The Mandalorian en caja">
             </picture>
             <article class="item-collection-content">
-                <p class="item-collection-licence">STAR WARS</p>
-                <h3 class="item-collection-title">BABY YODA BLUEBALL</h3>
-                <p class="item-collection-text">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
-                <p class="item-collection-price">$ 1799,99</p>
+                <p class="item-collection-licence"><%=item.licence_id%></p>
+                <h3 class="item-collection-title"><%=item.product_name%></h3>
+                <p class="item-collection-text"><%=item.product_description%></p>
+                <p class="item-collection-price">$ <%=item.price%></p>
                 <div class="card-item-promo">
                     <input id="quantity" class="item-input" type="number" min="0" name="quantity"  placeholder="0">
                     <div class="item-btns">
