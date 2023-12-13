@@ -76,146 +76,34 @@
     
     <!--Lista de productos del shop-->
 
-      <div class="grid-layout"> <!--Acomodar imagenes mismo tamaño-->
-            <div  class="card-item card">
-            <a class="card-item-link" href="./item.html">
-              <picture class="card-item-cover">
-                <span class="card-item-tag">Nuevo</span>
-                <img class="card-item-img--front" src="../../img/star-wars/trooper-1.webp" alt="Figura Funko coleccionable de Stormtrooper de Star Wars">
-                <img class="card-item-img--back" src="../../img/star-wars/trooper-box.webp" alt="Figura Funko coleccionable de Stormtrooper de Star Wars en caja">
-              </picture>
-                <div class="card-item-content">
-                    <p class="card-item-licence">STAR WARS</p>
-                    <h4 class="card-item-name">STORMTROOPER LIGHTSABER</h4>
-                    <p class="card-item-price">$1799,99</p>
-                    <p class="card-item-promo">3 CUOTAS SIN INTERÉS</p>
-                </div>
-            </a>
-          </div>
-                <div class="card-item card">
-                <a class="card-item-link" href="./item.html">
-                  <picture class="card-item-cover">
-                    <span class="card-item-tag">Nuevo</span>
-<!--                <img class="card-item-img--front" src="../../img/pokemon/pidgeotto-1.webp" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon">  -->
-<!--                <img class="card-item-img--back" src="../../img/pokemon/pidgeotto-box.webp" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon en caja">  -->
-                    <img class="card-item-img--front" src="../../<%=data.at(0).img_front %>" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon">
-                    <img class="card-item-img--back" src="../../<%=data.at(0).img_back %>" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon en caja">
+    <div class="grid-layout"> <!--Acomodar imagenes mismo tamaño-->
 
-                  </picture>
-                    <div class="card-item-content">
-                        <p class="card-item-licence">POKEMON</p>
-                        <h4 class="card-item-name"><!--PIDGEOTTO--> <%= data.at(0).product_name.toUpperCase() %></h4>
-                        <p class="card-item-price">$1799,99</p>
-                        <p class="card-item-promo">3 CUOTAS SIN INTERÉS</p>
-                    </div>
-                </a>
-                </div>
-                <div class="card-item card">
-                  <a class="card-item-link" href="./item.html">
-                    <picture class="card-item-cover">
-                      <span class="card-item-tag">Nuevo</span>
-                      <img class="card-item-img--front" src="../../img/harry-potter/luna-1.webp" alt="Figura Funko coleccionable de Luna Lovegood Lion Mask de la película de Harry Potter">
-                      <img class="card-item-img--back" src="../../img/harry-potter/luna-box.webp" alt="Figura Funko coleccionable de Luna Lovegood Lion Mask de la película de Harry Potter en caja">
-                    </picture>
-                        <div class="card-item-content">
-                            <p class="card-item-licence">HARRY POTTER</p>
-                            <h4 class="card-item-name">LUNA LOVEGOOD LION MASK</h4>
-                            <p class="card-item-price">$1799,99</p>
-                            <p class="card-item-promo">3 CUOTAS SIN INTERÉS</p>
-                      </div>
-                  </a>
+      <!-- Vitrina de productos -->
+
+    <% data.forEach( elemento => { %>
+     
+        <div class="card-item card">
+          <a class="card-item-link" href="/shop/item/<%= elemento.product_id %>">
+            <picture class="card-item-cover">
+              <span class="card-item-tag">Nuevo</span>
+              <img class="card-item-img--front" src="../../<%= elemento.img_front %>" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon">
+              <img class="card-item-img--back" src="../../<%= elemento.img_back %>" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon en caja">
+            </picture>
+              <div class="card-item-content">
+                  <p class="card-item-licence"><%= elemento.licence_name.toUpperCase() %></p>
+                  <h4 class="card-item-name"><%= elemento.product_name.toUpperCase() %></h4>
+                  <p class="card-item-price">$<%= elemento.product_price %></p>
+                  <p class="card-item-promo">3 CUOTAS SIN INTERÉS</p>
               </div>
-                <div  class="card-item card">
-                  <a class="card-item-link" href="./item.html">
-                    <picture class="card-item-cover">
-                      <span class="card-item-tag">Nuevo</span>
-                      <img class="card-item-img--front" src="../../img/star-wars/trooper-1.webp" alt="Figura Funko coleccionable de Stormtrooper de Star Wars">
-                      <img class="card-item-img--back" src="../../img/star-wars/trooper-box.webp" alt="Figura Funko coleccionable de Stormtrooper de Star Wars en caja">
-                    </picture>
-                      <div class="card-item-content">
-                          <p class="card-item-licence">STAR WARS</p>
-                          <h4 class="card-item-name">STORMTROOPER LIGHTSABER</h4>
-                          <p class="card-item-price">$1799,99</p>
-                          <p class="card-item-promo">3 CUOTAS SIN INTERÉS</p>
-                      </div>
-                  </a>
-                </div>
-              <div class="card-item card">
-              <a class="card-item-link" href="./item.html">
-                <picture class="card-item-cover">
-                  <span class="card-item-tag">Nuevo</span>
-                  <img class="card-item-img--front" src="../../img/pokemon/pidgeotto-1.webp" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon">
-                  <img class="card-item-img--back" src="../../img/pokemon/pidgeotto-box.webp" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon en caja">
-                </picture>
-                  <div class="card-item-content">
-                      <p class="card-item-licence">POKEMON</p>
-                      <h4 class="card-item-name">PIDGEOTTO</h4>
-                      <p class="card-item-price">$1799,99</p>
-                      <p class="card-item-promo">3 CUOTAS SIN INTERÉS</p>
-                  </div>
-              </a>
-              </div>
-              <div class="card-item card">
-                <a class="card-item-link" href="./item.html">
-                  <picture class="card-item-cover">
-                    <span class="card-item-tag">Nuevo</span>
-                    <img class="card-item-img--front" src="../../img/harry-potter/luna-1.webp" alt="Figura Funko coleccionable de Luna Lovegood Lion Mask de la película de Harry Potter">
-                    <img class="card-item-img--back" src="../../img/harry-potter/luna-box.webp" alt="Figura Funko coleccionable de Luna Lovegood Lion Mask de la película de Harry Potter en caja">
-                </picture>
-                      <div class="card-item-content">
-                          <p class="card-item-licence">HARRY POTTER</p>
-                          <h4 class="card-item-name">LUNA LOVEGOOD LION MASK</h4>
-                          <p class="card-item-price">$1799,99</p>
-                          <p class="card-item-promo">3 CUOTAS SIN INTERÉS</p>
-                    </div>
-                </a>
-            </div>
-            <div  class="card-item card">
-              <a class="card-item-link" href="./item.html">
-                <picture class="card-item-cover">
-                  <span class="card-item-tag">Nuevo</span>
-                  <img class="card-item-img--front" src="../../img/star-wars/trooper-1.webp" alt="Figura Funko coleccionable de Stormtrooper de Star Wars">
-                  <img class="card-item-img--back" src="../../img/star-wars/trooper-box.webp" alt="Figura Funko coleccionable de Stormtrooper de Star Wars en caja">
-                </picture>
-                  <div class="card-item-content">
-                      <p class="card-item-licence">STAR WARS</p>
-                      <h4 class="card-item-name">STORMTROOPER LIGHTSABER</h4>
-                      <p class="card-item-price">$1799,99</p>
-                      <p class="card-item-promo">3 CUOTAS SIN INTERÉS</p>
-                  </div>
-              </a>
-            </div>
-            <div class="card-item card">
-            <a class="card-item-link" href="./item.html">
-              <picture class="card-item-cover">
-                <span class="card-item-tag">Nuevo</span>
-                <img class="card-item-img--front" src="../../img/pokemon/pidgeotto-1.webp" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon">
-                <img class="card-item-img--back" src="../../img/pokemon/pidgeotto-box.webp" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon en caja">
-              </picture>
-                <div class="card-item-content">
-                    <p class="card-item-licence">POKEMON</p>
-                    <h4 class="card-item-name">PIDGEOTTO</h4>
-                    <p class="card-item-price">$1799,99</p>
-                    <p class="card-item-promo">3 CUOTAS SIN INTERÉS</p>
-                </div>
-            </a>
-            </div>
-            <div class="card-item card">
-            <a class="card-item-link" href="./item.html">
-              <picture class="card-item-cover">
-                <span class="card-item-tag">Nuevo</span>
-                <img class="card-item-img--front" src="../../img/harry-potter/luna-1.webp" alt="Figura Funko coleccionable de Luna Lovegood Lion Mask de la película de Harry Potter">
-                <img class="card-item-img--back" src="../../img/harry-potter/luna-box.webp" alt="Figura Funko coleccionable de Luna Lovegood Lion Mask de la película de Harry Potter en caja">
-              </picture>
-                  <div class="card-item-content">
-                      <p class="card-item-licence">HARRY POTTER</p>
-                      <h4 class="card-item-name">LUNA LOVEGOOD LION MASK</h4>
-                      <p class="card-item-price">$1799,99</p>
-                      <p class="card-item-promo">3 CUOTAS SIN INTERÉS</p>
-                </div>
-            </a>
-        </div>
-   
+          </a>
+          </div>
+
+
+    <% }) %>
+
+
+
+      <!-- Hasta acá llega la "vitrina" de muñecos -->  
         
       <section class="flex-btn"> <!--No puedo centrar n° ni centrarlos en pag. Ni hacer border radius-->
             <div class="glide__arrows" data-glide-el="controls">
