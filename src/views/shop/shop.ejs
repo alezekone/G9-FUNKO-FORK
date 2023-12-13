@@ -86,13 +86,13 @@
           <a class="card-item-link" href="/shop/item/<%= elemento.product_id %>">
             <picture class="card-item-cover">
               <span class="card-item-tag">Nuevo</span>
-              <img class="card-item-img--front" src="../../<%= elemento.img_front %>" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon">
-              <img class="card-item-img--back" src="../../<%= elemento.img_back %>" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon en caja">
+              <img class="card-item-img--front" src="/img<%= elemento.image_front %>" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon">
+              <img class="card-item-img--back" src="/img<%= elemento.image_back %>" alt="Figura Funko coleccionable de Pidgeotto perteneciente a la serie Pokemon en caja">
             </picture>
               <div class="card-item-content">
-                  <p class="card-item-licence"><%= elemento.licence_name.toUpperCase() %></p>
+                  <p class="card-item-licence"><%= elemento.licence_id %></p>
                   <h4 class="card-item-name"><%= elemento.product_name.toUpperCase() %></h4>
-                  <p class="card-item-price">$<%= elemento.product_price %></p>
+                  <p class="card-item-price">$<%= elemento.price %></p>
                   <p class="card-item-promo">3 CUOTAS SIN INTERÉS</p>
               </div>
           </a>
