@@ -8,8 +8,7 @@ const shopControllers = {
     shop_item_get : (req, res) => res.render('shop/item',{}),
     shop_item_post : (req, res) => res.send(`Ruta para agregar un item. Parámetro: ${req.params.id}`),
     shop_cart_get : (req, res) => res.render('shop/cart'),
-    shop_cart_post : (req, res) => res.send("Ruta para agregar un carrito.")
+    shop_cart_post : (req, res) => res.send("Ruta para agregar un carrito.")   
 }
 
 module.exports = shopControllers;
-
