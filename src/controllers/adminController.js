@@ -1,5 +1,10 @@
+const productModel = require('../model/productModel');
+
 const adminControllers = {
-    admin_get : (req, res) => res.render('admin/admin',{}),
+    admin_get : async (req, res) => {
+        const data = await productModel.getAll();
+        res.render('admin/admin',{data});
+    },
     admin_create_get : (req, res) => res.render('admin/create',{}),
     admin_create_post : (req, res) => res.send("Ruta para Create x post"),
     admin_edit_get : (req, res) => res.render('admin/edit',{}),
@@ -8,3 +13,9 @@ const adminControllers = {
 }
 
 module.exports = adminControllers;
+
+// admin_get :  async (req, res) => {
+//     const data = await productModel.getAll();
+//     console.log(data);
+//     res.render('admin/admin', {data});
+// }

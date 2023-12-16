@@ -3,14 +3,12 @@ const productModel = require('../model/productModel');
 
 // console.log(testData);
 // console.log(testData.at(1));
-// Con datos fake, mandaba como parámentro {data: testData} a la vista.
+
 
 const shopControllers = {
     shop_get : async (req, res) => {
         const data = await productModel.getAll();
-        console.log(data);
         res.render('shop/shop', {data});
-        console.log('La imagen dice ' + data.at(1).image_front);
     },
     shop_item_get : async (req, res) => {
         const itemId = req.params.id;
