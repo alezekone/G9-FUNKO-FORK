@@ -38,25 +38,25 @@
 
             <article class="main-article">
                 <label class="form-label" for="nombre">Nombre del Producto:</label>
-                <input class="create-input edit-input" type="text" id="nombre" name="nombre" value="Kakashi Hatake Shippuden Saga">
+                <input class="create-input edit-input" type="text" id="nombre" name="nombre" value="<%=data.product_name%>">
             </article>
             
-            <textarea class="create-input edit-input" id="descripcion" name="descripcion">Figura Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.</textarea>
+            <textarea class="create-input edit-input" id="descripcion" name="descripcion"><%=data.product_description%></textarea>
             
             <article class="main-article">
                 <label for="sku">SKU:</label>
-                <input class="edit-input" type="text" id="sku" name="sku" value="NAR001012">
+                <input class="edit-input" type="text" id="sku" name="sku" value="<%=data.sku%>">
             
                 <label for="precio">Precio:</label>
-                <input class="edit-input" type="text" id="precio" name="precio" value="$ 1.799,00">
+                <input class="edit-input" type="text" id="precio" name="precio" value="$ <%=data.price%>">
                 
                 <label for="stock">Stock:</label>
-                <input class="edit-input" min="0" type="number" id="stock" name="stock" value="10">
+                <input class="edit-input" min="0" type="number" id="stock" name="stock" value="<%=data.stock%>">
             </article>
             
             <article class="main-article">
                 <label for="descuento">Descuento:</label>
-                <input class="edit-input" type="text" id="descuento" name="descuento" value="10%">
+                <input class="edit-input" type="text" id="descuento" name="descuento" value="<%=data.discount%>%">
                 
                 <label for="cuotas">Cuotas:</label>
                 <select class="create-input edit-input" id="cuotas" name="cuotas">
