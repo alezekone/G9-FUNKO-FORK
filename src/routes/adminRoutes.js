@@ -3,12 +3,20 @@ const adminControllers = require('../controllers/adminController');
 
 const router = express.Router();
 
-router.get('/', adminControllers.admin_get);
-router.get('/create', adminControllers.admin_create_get);
-router.post('/create', adminControllers.admin_create_post);
-router.get('/edit/:id', adminControllers.admin_edit_get);
-router.put('/edit/:id', adminControllers.admin_edit_put);
-router.delete('/delete/:id', adminControllers.admin_delete);
+// Middleware de sesión
+const requiereAdmin = (req, res, next) => {
+    if (!req.session.esAdmin) {
+        return res.redirect('/auth/login');
+    }
+    next();
+}
+
+router.get('/', requiereAdmin, adminControllers.admin_get);
+router.get('/create', requiereAdmin, adminControllers.admin_create_get);
+router.post('/create', requiereAdmin, adminControllers.admin_create_post);
+router.get('/edit/:id', requiereAdmin, adminControllers.admin_edit_get);
+router.put('/edit/:id', requiereAdmin, adminControllers.admin_edit_put);
+router.delete('/delete/:id', requiereAdmin, adminControllers.admin_delete);
 
 module.exports = router;
 

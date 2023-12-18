@@ -1,4 +1,6 @@
 const express = require('express');
+const session = require('express-session');
+// require('dotenv').config();
 
 const app = express();
 
@@ -6,6 +8,16 @@ const mainRoutes = require('./src/routes/mainRoutes');
 const shopRoutes = require('./src/routes/shopRoutes');
 const adminRoutes = require('./src/routes/adminRoutes');
 const authRoutes = require('./src/routes/authRoutes');
+
+// Configuración de express-session
+app.use(session({
+        secret: process.env.SESSION_SECRET,
+        name: "sesion",
+        resave: false,
+        saveUninitialized: false,
+        cookie: {maxAge: 60000 * 5}
+    })
+);
 
 app.use(express.urlencoded ({extended: false}));
 app.use(express.json());
